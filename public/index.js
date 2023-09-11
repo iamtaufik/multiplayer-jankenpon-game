@@ -71,7 +71,7 @@ setInterval(() => {
   }
 
   socket.emit('checkCollision');
-}, 1000 / 60);
+}, 1000 / 30);
 
 socket.on('players', (players) => {
   for (const player of players) {

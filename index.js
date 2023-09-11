@@ -76,7 +76,7 @@ io.on('connection', async (socket) => {
 
 setInterval(() => {
   io.emit('players', players);
-}, 1000 / 60);
+}, 1000 / 30);
 
 httpServer.listen(port, () => {
   console.log('listening on *:3000');
